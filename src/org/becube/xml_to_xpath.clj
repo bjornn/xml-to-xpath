@@ -24,7 +24,7 @@
     (let [tag (xml-content-fragment :tag)
           attrs (:attrs xml-content-fragment)
           path (str collected-path "/" (name tag))
-          attrs-paths (getAttributes collected-path attrs)]
+          attrs-paths (getAttributes path attrs)]
       ;;(prn (str "recursing-xmltree --> " path ", curse on? : " (= clojure.lang.PersistentStructMap (type xml-content-fragment))))
       ;;(prn  path)
       (reduce conj attrs-paths(map (fn[x] (recurse-xmltree path x)) (:content xml-content-fragment)))

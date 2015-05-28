@@ -1,4 +1,4 @@
-(defproject org.becube.xml-to-xpath "1.0"
+(defproject org.becube.xml-to-xpath "1.1"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"

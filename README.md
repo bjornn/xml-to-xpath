@@ -15,7 +15,7 @@ you want to use them without installing a Clojure infrastructure grab a standalo
 
 
 
-    $ java -jar org.becube.xml-to-xpath-1.0-standalone.jar <filename>.xml
+    $ java -jar org.becube.xml-to-xpath-1.1-standalone.jar <filename>.xml
 
 If you omit the filename you will get an usage message and if you provide
 a bad filename or if the file does not contain valid xml you will probably receive
