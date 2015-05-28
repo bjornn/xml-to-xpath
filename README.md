@@ -1,21 +1,29 @@
 # org.becube.xml-to-xpath
 
-FIXME: description
+This is a simple command line utility that takes a file path pointing to an xml file as input and returns a list of XPath expressions to every element and attribute present in that file.
+
+Typical use case for this utility is when you want to create a mapping specification between two xml formats in a spreadsheet format. You then start by extracting the XPaths (with this tool) from two example files and then you align them row wise. 
 
 ## Installation
+This project is automated with Leiningen which can be installed from
+http://leiningen.org/
 
-Download from http://example.com/FIXME.
+Project standalone jars are listed under the target/uberjar directory. If
+you want to use them without installing a Clojure infrastructure grab a standalone version.
 
 ## Usage
 
-FIXME: explanation
 
-    $ java -jar org.becube.xml-to-xpath-0.1.0-standalone.jar [args]
+
+    $ java -jar org.becube.xml-to-xpath-1.0-standalone.jar <filename>.xml
+
+If you omit the filename you will get an usage message and if you provide
+a bad filename or if the file does not contain valid xml you will probably receive
+a stack trace,
 
 ## Options
 
-FIXME: listing of options this app accepts.
-
+There are no options yet. The utility aims to do one thing and to do it good.
 ## Examples
 
 ...
