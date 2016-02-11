@@ -1,8 +1,6 @@
 # org.becube.xml-to-xpath
 
-This is a simple command line utility that takes a file path pointing to an xml file as input and returns a list of XPath expressions to every element and attribute present in that file.
-
-Typical use case for this utility is when you want to create a mapping specification between two xml formats in a spreadsheet format. You then start by extracting the XPaths (with this tool) from two example files and then you align them row wise. 
+This is a simple command line utility that takes an xml file as input and returns a list of XPath expressions corresponding to every element and attribute present in that file.
 
 ## Installation
 This project is automated with Leiningen which can be installed from
@@ -13,17 +11,16 @@ you want to use them without installing a Clojure infrastructure grab a standalo
 
 ## Usage
 
-
-
     $ java -jar org.becube.xml-to-xpath-1.1-standalone.jar <filename>.xml
 
-If you omit the filename you will get an usage message and if you provide
+If you omit the filename you will get a helpful usage message. If you provide
 a bad filename or if the file does not contain valid xml you will probably receive
-a stack trace,
+a stack trace.
 
 ## Options
 
-There are no options yet. The utility aims to do one thing and to do it good.
+There are no options yet. The utility aims to do only one thing.
+
 ## Examples
 
 ...
@@ -31,10 +28,6 @@ There are no options yet. The utility aims to do one thing and to do it good.
 ### Bugs
 
 ...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
